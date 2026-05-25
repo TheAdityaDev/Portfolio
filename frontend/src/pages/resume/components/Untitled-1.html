@@ -1,0 +1,23 @@
+ {/* Futuristic top coordinate alignment header bar */}
+      <header className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-5 flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-900 pb-5">
+        <div className="flex items-center gap-3">
+          <div className="relative group">
+            <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-indigo-500 to-amber-500 blur-sm opacity-50 group-hover:opacity-80 transition duration-700"></div>
+            <FuturisticAvatar activeTheme={activeTheme} size="w-14 h-14" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <h1 className="text-xl font-extrabold tracking-tight text-white">
+                {combinedData.Name}
+              </h1>
+              <span className="text-[9px] font-mono px-1.5 py-0.5 bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 rounded">
+                OPERATOR_NODE
+              </span>
+            </div>
+            <p className="text-[10px] text-slate-500 mt-0.5 font-mono flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Core Profile: Full Stack Developer
+            </p>
+          </div>
+        </div>
+      </header>
