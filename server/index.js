@@ -62,7 +62,18 @@ app.use(express.urlencoded({ extended: true }));
 
 connectDB();
 
-app.use(express.static(frontendDistPath));
+// Serve static files with correct MIME types for JavaScript modules
+app.use(express.static(frontendDistPath, {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.set('Content-Type', 'application/javascript; charset=utf-8');
+    } else if (path.endsWith('.json')) {
+      res.set('Content-Type', 'application/json');
+    } else if (path.endsWith('.css')) {
+      res.set('Content-Type', 'text/css');
+    }
+  }
+}));
 
 app.use("/api/projects", projectRoutes);
 app.use("/api/contact", contactRoutes);
