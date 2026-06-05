@@ -10,6 +10,6 @@ const root = createRoot(container);
 
 useEffect(()=>{
     healthAPI.healthCheck()
-})
+},[healthAPI])
 
 root.render(<App />);
