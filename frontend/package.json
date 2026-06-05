@@ -31,7 +31,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite .",
-    "build": "vite build --sourcemap",
+    "build": "vite build --sourcemap && node copy-images.js",
     "serve": "vite preview"
   },
   "eslintConfig": {
