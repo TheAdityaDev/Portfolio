@@ -77,8 +77,8 @@ app.use(express.static(frontendDistPath, {
 app.use("/api/projects", projectRoutes);
 app.use("/api/contact", contactRoutes);
 
-app.get("/api", (req, res) => {
-  res.json({ message: "API Running" });
+app.get("/api/health", (req, res) => {
+  res.json({ message: "OK" });
 });
 
 app.use("/api", (req, res) => {
