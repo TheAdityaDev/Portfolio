@@ -8,73 +8,73 @@ const ProfessionalTimeline = () => {
 
   const timelineData = [
     {
-      year: "2024",
-      title: "Senior Creative Director",
-      company: "Royal Digital Studios",
+      year: "2025 - Present",
+      title: "Master of Computer Applications (MCA)",
+      company: "Allana Institute of Management Sciences, Pune",
       type: "current",
-      description: `Leading a team of 15+ designers and developers in creating premium digital experiences for Fortune 500 clients. Spearheading the company's design system initiative and establishing new creative standards.`,
+      description: "Currently pursuing postgraduate studies in Computer Applications, focusing on advanced systems architecture, software engineering principles, database systems, and AI APIs.",
       achievements: [
-        "Increased client satisfaction by 40%",
-        "Led 25+ successful product launches",
-        "Established company-wide design system"
+        "Specializing in system design and data modeling",
+        "Focused on full stack web development architectures",
+        "Applying academic principles to production-ready projects"
       ],
-      technologies: ["React", "Figma", "AWS", "TypeScript"],
-      icon: "Crown"
+      technologies: ["Node.js", "Java", "MongoDB", "System Design"],
+      icon: "GraduationCap"
     },
     {
-      year: "2022",
-      title: "Lead Frontend Developer",
-      company: "TechVision Inc.",
+      year: "2025",
+      title: "Full-Stack Developer (Hands-on Projects)",
+      company: "LangBridge & NextGen AI Services",
       type: "promotion",
-      description: `Promoted to lead frontend development across multiple product lines. Architected scalable React applications serving 100K+ daily active users while mentoring junior developers.`,
+      description: "Designed and built high-performance, real-time web applications. Engineered a WebRTC peer-to-peer signaling server and built a React.js token-by-token streaming UI for OpenAI API integrations.",
       achievements: [
-        "Reduced load times by 60%",
-        "Mentored 8 junior developers",
-        "Implemented CI/CD pipelines"
+        "Built WebRTC video grid for 2 to 8+ participants",
+        "Delivered sub-200ms perceived response times for AI streaming",
+        "Implemented Redis conversation context caching"
       ],
-      technologies: ["React", "Next.js", "Node.js", "Docker"],
-      icon: "TrendingUp"
-    },
-    {
-      year: "2020",
-      title: "Full-Stack Developer",
-      company: "StartupLab",
-      type: "growth",
-      description: `Joined as the 5th employee and helped scale the platform from MVP to serving thousands of users. Built both frontend and backend systems while establishing development best practices.`,
-      achievements: [
-        "Built MVP from scratch",
-        "Scaled to 10K+ users",
-        "Established dev workflows"
-      ],
-      technologies: ["Vue.js", "Python", "PostgreSQL", "Redis"],
+      technologies: ["React.js", "Node.js", "WebRTC", "Socket.io", "Redis", "AWS"],
       icon: "Rocket"
     },
     {
-      year: "2018",
-      title: "Frontend Developer",
-      company: "Creative Agency Co.",
-      type: "start",
-      description: `Started my professional journey building responsive websites and interactive experiences for creative agencies. Learned the fundamentals of user-centered design and modern web development.`,
+      year: "2024 - 2025",
+      title: "Full Stack Development Trainee",
+      company: "Sheryians Coding School & LinkCode",
+      type: "growth",
+      description: "Completed intensive training programs in modern web technologies and Java full-stack engineering, learning frontend optimization and robust database integrations.",
       achievements: [
-        "Delivered 30+ client projects",
-        "Mastered responsive design",
-        "Built first React applications"
+        "Acquired certifications in Full Stack Web Development",
+        "Mastered React state management & Express REST APIs",
+        "Participated in College Webathon and Hackathons"
       ],
-      technologies: ["HTML/CSS", "JavaScript", "React", "Sass"],
-      icon: "Play"
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "Express", "Java"],
+      icon: "Award"
     },
     {
-      year: "2016",
-      title: "Computer Science Degree",
-      company: "Stanford University",
-      type: "education",
-      description: `Graduated with honors, specializing in Human-Computer Interaction and Software Engineering. Participated in multiple hackathons and built several open-source projects.`,
+      year: "2024",
+      title: "Software Engineering Program Trainee",
+      company: "Capgemini",
+      type: "start",
+      description: "Completed an intensive software engineering development training program focusing on software lifecycle fundamentals and professional dev workflows.",
       achievements: [
-        "Graduated Magna Cum Laude",
-        "Won 3 hackathon competitions",
-        "Published 2 research papers"
+        "Learned enterprise software engineering principles",
+        "Worked on agile team collaborative workflows",
+        "Gained certification in Soft Skills & Communication"
       ],
-      technologies: ["Java", "Python", "C++", "Machine Learning"],
+      technologies: ["Software Engineering", "Agile", "Git & GitHub"],
+      icon: "Briefcase"
+    },
+    {
+      year: "2022 - 2025",
+      title: "Bachelor of Business Administration (BBA-CA)",
+      company: "SBB Appasaheb Jedhe College, Pune",
+      type: "education",
+      description: "Graduated with a Bachelor's degree in Computer Applications, mastering database management systems, business software design, and core programming languages.",
+      achievements: [
+        "Earned BBA in Computer Applications",
+        "Won College Webathon in the Frontend Track",
+        "Built responsive web apps under competitive conditions"
+      ],
+      technologies: ["HTML5", "CSS3", "JavaScript", "SQL", "DBMS"],
       icon: "GraduationCap"
     }
   ];

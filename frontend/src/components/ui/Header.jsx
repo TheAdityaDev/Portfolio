@@ -24,7 +24,7 @@ const Header = () => {
       tooltip: 'Personal story and skills showcase'
     },
     { 
-      label: 'Portfolio', 
+      label: 'Projects', 
       path: '/portfolio-gallery', 
       anchor: '#portfolio',
       icon: 'Briefcase',
@@ -44,13 +44,13 @@ const Header = () => {
       icon: 'File',
       tooltip: 'Check the Resume'
     },
-    { 
-      label: 'Achievements', 
-      path: '/achievements', 
-      anchor: '#achievements',
-      icon: 'BadgeCheck',
-      tooltip: 'Check the Achievements'
-    }
+    // { 
+    //   label: 'Achievements', 
+    //   path: '/achievements', 
+    //   anchor: '#achievements',
+    //   icon: 'BadgeCheck',
+    //   tooltip: 'Check the Achievements'
+    // }
   ];
 
   useEffect(() => {

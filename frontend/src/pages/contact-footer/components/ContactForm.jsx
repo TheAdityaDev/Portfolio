@@ -8,7 +8,6 @@ import { contactAPI } from "services/api";
 const HRContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState("");
 
   // COMPANY SEARCH
   const [companySuggestions, setCompanySuggestions] = useState([]);
@@ -25,6 +24,15 @@ const HRContactForm = () => {
 
   const companyName = watch("companyName");
 
+  const sendContactRequest = async (data) => {
+    try {
+      const req = await contactAPI.submit(data);
+      return req;
+    } catch (error) {
+      throw error;
+    }
+  };
+
   // FETCH COMPANY AUTOCOMPLETE
   useEffect(() => {
     const controller = new AbortController();
@@ -37,16 +45,14 @@ const HRContactForm = () => {
 
       try {
         const response = await axios.get(
-          `https://autocomplete.clearbit.com/v1/companies/suggest?query=${encodeURIComponent(companyName)}`,
+          `https://autocomplete.clearbit.com/v1/companies/suggest?query=${companyName}`,
           { signal: controller.signal }
         );
 
         setCompanySuggestions(response.data);
         setShowSuggestions(true);
       } catch (error) {
-        if (error.code !== "ERR_CANCELED") {
-          console.error("Error fetching companies:", error);
-        }
+        if (!axios.isCancel(error)) console.log(error);
       }
     };
 
@@ -59,25 +65,21 @@ const HRContactForm = () => {
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
-    setSubmitSuccess(false);
-    setSubmitError("");
 
     try {
-      await contactAPI.submit(data);
+      console.log("HR Contact Data:", data);
+
+      // API CALL HERE
+      // await api.submitHRContact(data)
+
       setSubmitSuccess(true);
-      setShowSuggestions(false);
-      setCompanySuggestions([]);
-      reset();
 
       setTimeout(() => {
         setSubmitSuccess(false);
+        reset();
       }, 3000);
     } catch (error) {
-      console.error("Error submitting contact request:", error);
-      setSubmitError(
-        error.response?.data?.message ||
-          "Unable to send your request right now. Please try again later."
-      );
+      console.log(error);
     } finally {
       setIsSubmitting(false);
     }
@@ -113,12 +115,6 @@ const HRContactForm = () => {
             <div className="mb-6 bg-green-100 border border-green-300 text-green-700 p-4 rounded-xl flex items-center gap-3">
               <Icon name="CheckCircle" size={20} />
               Request sent successfully.
-            </div>
-          )}
-
-          {submitError && (
-            <div className="mb-6 bg-red-100 border border-red-300 text-red-700 p-4 rounded-xl">
-              {submitError}
             </div>
           )}
 
@@ -308,6 +304,7 @@ const HRContactForm = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               disabled={isSubmitting}
+              onClick={() => sendContactRequest(watch())}
               className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-3 shadow-lg"
             >
               {isSubmitting ? (

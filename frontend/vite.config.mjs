@@ -6,21 +6,27 @@ export default defineConfig({
   base: "/",
   plugins: [react(), tsconfigPaths()],
 
-  server: {
-    headers: {
-      'Content-Type': 'application/javascript; charset=utf-8'
-    }
-  },
-
   build: {
     outDir: "dist",
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        entryFileNames: "assets/[name]-[hash].js",
-        chunkFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash][extname]"
-      }
-    }
+    target: 'esnext'
+  },
+
+  optimizeDeps: {
+    include: [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "recharts",
+      "d3",
+      "axios",
+      "date-fns",
+      "framer-motion",
+      "lucide-react",
+      "react-helmet",
+      "react-hook-form",
+      "@reduxjs/toolkit",
+      "redux",
+      "react-snowfall"
+    ]
   }
 });

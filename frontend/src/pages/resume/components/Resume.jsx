@@ -27,110 +27,152 @@ const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const CANDIDATE_JSON_DATA = [
   {
     id: 'frontend-developer',
-    name: 'Alex Mercer',
-    role: 'Principal Frontend Engineer',
+    name: 'Aditya Patil',
+    role: 'Frontend Developer • React.js Engineer • UI Performance Specialist',
     category: 'Graphics & Core UI',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200',
-    email: 'alex.mercer@innovate.io',
+    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=200&h=200',
+    email: 'adityapatildev21@gmail.com',
     phone: '+91 8855040187',
-    location: 'San Francisco, CA',
-    skills: ["React / Next.js", "WebGL & Three.js", "Tailwind Design Tokens", "TypeScript", "UI Performance Optimization"],
-    summary: "High-performing React architect & graphics developer with 8+ years designing low-latency, fluid, and responsive user interfaces.",
+    location: 'Pune, Maharashtra, India',
+    skills: [
+      "React.js / JavaScript (ES6+)",
+      "Tailwind CSS & CSS3",
+      "Component-Based Architecture",
+      "Vite Bundle Optimization",
+      "Socket.io & WebRTC UI"
+    ],
+    summary: "Frontend Developer with production experience building performant, accessible, and visually polished web applications using React.js, JavaScript (ES6+), HTML5, CSS3, and Tailwind CSS. Expert in component-based architecture, React Hooks, state management, and REST API integration. Delivered measurable performance wins — Lighthouse score from 54 to 91, JS bundle reduced by ~38% via Vite code splitting and lazy loading.",
     experience: [
       {
-        role: "Principal Frontend Engineer",
-        company: "Innovate Studio",
-        duration: "2021 - Present",
-        desc: "Leads React platform architecture, rendering optimization, and high-fidelity interaction systems for premium client products."
+        role: "Frontend Engineer (NextGen AI Services)",
+        company: "nextgensupportai.vercel.app/home",
+        duration: "Feb 2025 – May 2025",
+        desc: "Built a React.js streaming UI for an AI support platform rendering responses token-by-token via Socket.io with sub-200ms perceived response times. Engineered real-time response display with React Hooks & optimistic UI. Integrated REST APIs with Axios."
       },
       {
-        role: "Senior UI Engineer",
-        company: "Pixel Forge",
-        duration: "2018 - 2021",
-        desc: "Built reusable design-system foundations, advanced animation workflows, and accessibility-first component libraries."
-      }
-    ],
-    actualResponses: {
-      "what are alex's core framework proficiencies?": "Alex Mercer focuses heavily on React, Next.js, and Svelte, utilizing custom utility systems for low-latency visual render pipelines.",
-      "can you describe his webgl engineering expertise?": "Alex specializes in high-performance graphics integrations, including custom WebGL, Three.js vector states, and high-DPI canvas layouts.",
-      "does alex have experience with design system tokens?": "Yes, Alex has designed extensive multi-brand styling libraries using CSS custom variable tokens mapped entirely through Tailwind CSS."
-    },
-    suggestedPrompts: [
-      "What are Alex's core framework proficiencies?",
-      "Can you describe his WebGL engineering expertise?",
-      "Does Alex have experience with design system tokens?"
-    ]
-  },
-  {
-    id: 'backend-developer',
-    name: 'Sarah Chen',
-    role: 'Distributed Cloud Systems Architect',
-    category: 'Database & Infrastructure',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200',
-    email: 'sarah.chen@cloudscale.net',
-    phone: '+1 (555) 901-2248',
-    location: 'Seattle, WA',
-    skills: ["Go / Rust / Node.js", "PostgreSQL Clustering", "Kafka Stream Processing", "Docker & Kubernetes", "gRPC / Protobuf"],
-    summary: "Distributed systems architect expert in low-latency infrastructure pipelines, high-throughput microservices, and high-integrity database tuning.",
-    experience: [
-      {
-        role: "Distributed Cloud Systems Architect",
-        company: "CloudScale",
-        duration: "2020 - Present",
-        desc: "Designed resilient microservice platforms with Kafka, PostgreSQL, and Kubernetes for high-throughput enterprise workloads."
+        role: "Frontend Developer (LangBridge)",
+        company: "googlemeetcloneapp.netlify.app",
+        duration: "Feb 2025 – Jul 2025",
+        desc: "Designed and built the real-time meeting UI in React.js supporting adaptive grid layout for 2 to 8+ participants. Implemented WebRTC media stream handling and Socket.io signaling. Optimized re-renders with React.memo/useCallback."
       },
       {
-        role: "Platform Engineer",
-        company: "Northwind Data",
-        duration: "2016 - 2020",
-        desc: "Owned infrastructure automation, service observability, and low-latency API delivery across regional deployments."
+        role: "Storefront Developer (Ram Mart)",
+        company: "rammart.netlify.app",
+        duration: "May 2025 – Jun 2025",
+        desc: "Engineered a Vite-bundled React.js storefront with route-based code splitting and lazy loading, improving Lighthouse performance from 54 to 91 and cutting initial JS bundle by ~38%. Built a reusable component library with Tailwind CSS."
       }
     ],
+    resumeLink: "https://drive.google.com/file/d/1B6_b80j8uR70tLzX3h-yV069G917X69V/view?usp=sharing",
+    resumeDownload: "https://docs.google.com/uc?export=download&id=1B6_b80j8uR70tLzX3h-yV069G917X69V",
     actualResponses: {
-      "what programming languages does sarah write in?": "Sarah Chen builds concurrent pipelines primarily in Go, Rust, and Node.js for modern memory-safe computing.",
-      "explain sarah's experience with database scaling.": "Sarah optimizes DB read/write mirrors in PostgreSQL, routes analytical pipelines via Apache Kafka, and secures sessions with dual-layer Redis locks.",
-      "how does she approach microservice orchestration?": "She packages lightweight Alpine containers, hosting them on Kubernetes, with lightning-fast inter-service communication managed via gRPC and Protobuf."
+      "what are aditya's core frontend proficiencies": "Aditya's core frontend proficiencies include React.js, modern JavaScript (ES6+), Tailwind CSS, React Hooks, and Context API. He specializes in building performant and accessible web interfaces.",
+      "can you describe his webrtc/socket.io frontend integration": "On the frontend, Aditya integrated Socket.io for real-time signaling events and designed an adaptive video grid layout for 2 to 8+ participants with live controls. He also handled WebRTC media streams directly in the browser.",
+      "does aditya have experience with design system tokens": "Yes, Aditya built a reusable component library utilizing Tailwind CSS design tokens (product cards, filters, drawers) which reduced UI development times significantly."
     },
     suggestedPrompts: [
-      "What programming languages does Sarah write in?",
-      "Explain Sarah's experience with database scaling.",
-      "How does she approach microservice orchestration?"
+      "What are Aditya's core frontend proficiencies?",
+      "Can you describe his WebRTC/Socket.io frontend integration?",
+      "Does Aditya have experience with design system tokens?"
     ]
   },
   {
     id: 'fullstack-developer',
-    name: 'Marcus Vance',
-    role: 'Principal Fullstack Engineer',
+    name: 'Aditya Patil',
+    role: 'Full Stack Developer • AI Systems Engineer • Node.js & React.js',
     category: 'Full Range Integration',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200',
-    email: 'marcus.vance@vancetech.com',
-    phone: '+1 (555) 473-1189',
-    location: 'Austin, TX',
-    skills: ["Next.js / React", "Node.js Serverless", "OAuth 2.0 / JWT", "AWS Lambda & Cognito", "CI/CD & Cypress Testing"],
-    summary: "Versatile Fullstack engineer focused on Next.js Serverless architectures, secure token identity flows, and automated cloud deployments.",
+    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=200&h=200',
+    email: 'adityapatildev21@gmail.com',
+    phone: '+91 8855040187',
+    location: 'Pune, Maharashtra, India',
+    skills: [
+      "React.js & Node.js / Express",
+      "MongoDB, MySQL & Redis",
+      "LLM Integration / OpenAI",
+      "WebRTC & WebSockets",
+      "Docker & AWS Deployment"
+    ],
+    summary: "Full Stack Developer with production experience designing and shipping scalable web applications and AI-powered backend systems. Proficient across the complete stack — React.js, Node.js, Express.js, MongoDB, MySQL, Redis, and REST API design — with hands-on implementation of LLM integration, prompt engineering, WebRTC real-time architecture, Docker containerization, Nginx reverse-proxying, and CI/CD pipelines.",
     experience: [
       {
-        role: "Principal Fullstack Engineer",
-        company: "Vance Tech",
-        duration: "2022 - Present",
-        desc: "Ships serverless Next.js platforms with secure auth, CI/CD automation, and production-grade observability."
+        role: "Full-Stack AI Developer (NextGen AI Services)",
+        company: "nextgensupportai.vercel.app/home",
+        duration: "Feb 2025 – May 2025",
+        desc: "Architected a production-grade full-stack AI platform on AWS EC2 behind Nginx reverse proxy. Integrated OpenAI's LLM API, designed prompt engineering pipelines, and implemented Redis-based conversation caching reducing latency by ~45%."
       },
       {
-        role: "Senior Software Engineer",
-        company: "Launchpad Labs",
-        duration: "2018 - 2022",
-        desc: "Delivered fullstack web products spanning React, Node.js APIs, cloud functions, and end-to-end quality pipelines."
+        role: "Full-Stack Real-Time Engineer (LangBridge)",
+        company: "googlemeetcloneapp.netlify.app",
+        duration: "Feb 2025 – Jul 2025",
+        desc: "Designed WebRTC peer-to-peer architecture with Node.js/Socket.io signaling. Built scalable room management handling 50+ concurrent rooms. Deployed backend on AWS EC2 with Nginx for SSL, and MongoDB Atlas for persistent metadata."
+      },
+      {
+        role: "Full-Stack Developer (Ram Mart)",
+        company: "rammart.netlify.app",
+        duration: "May 2025 – Jun 2025",
+        desc: "Built full-stack e-commerce platform with Node/Express backend, MongoDB, and React storefront. Integrated JWT with refresh token rotation, bcrypt password hashing, AWS S3 image storage with pre-signed URLs, and Redis listing cache."
       }
     ],
+    resumeLink: "https://drive.google.com/file/d/1B6_b80j8uR70tLzX3h-yV069G917X69V/view?usp=sharing",
+    resumeDownload: "https://docs.google.com/uc?export=download&id=1B6_b80j8uR70tLzX3h-yV069G917X69V",
     actualResponses: {
-      "what is marcus's preferred fullstack stack?": "Marcus prefers next-generation Next.js serverless applications mapped on AWS Lambda endpoints, combining dynamic Client UI and Node.js REST/GraphQL APIs.",
-      "describe the security standards marcus implements.": "Marcus structures cryptographic JWT verification layers, OAuth 2.0 multi-tenant flows, and maintains automated dependency auditing within Dockerized microservices.",
-      "does marcus manage continuous integration pipelines?": "Yes, he builds robust parallel CI/CD configurations in GitHub Actions, integrating Jest unit tests and Cypress visual flows to guarantee zero-friction deployments."
+      "what full-stack database integrations does aditya use": "Aditya implements dual-layer database strategies: MongoDB Atlas and MySQL for persistent metadata, Redis for conversation context caching and e-commerce listing caching (improving latency by 45%).",
+      "how does aditya implement security and auth in his stack": "Aditya implements secure JWT authentication with access/refresh token rotation, bcrypt password hashing, express-rate-limit, Helmet.js security headers, and input validation meeting OWASP standards.",
+      "describe aditya's experience with aws and docker deployment": "Aditya containerized frontend and backend services using Docker/Docker Compose. He deployed these systems on AWS EC2 behind Nginx reverse-proxies, utilizing AWS S3 & CloudFront for static asset caching, and automated CI/CD via GitHub Actions."
     },
     suggestedPrompts: [
-      "What is Marcus's preferred fullstack stack?",
-      "Describe the security standards Marcus implements?",
-      "Does Marcus manage continuous integration pipelines?"
+      "What full-stack database integrations does Aditya use?",
+      "How does Aditya implement security and auth in his stack?",
+      "Describe Aditya's experience with AWS and Docker deployment."
+    ]
+  },
+  {
+    id: 'backend-developer',
+    name: 'Aditya Patil',
+    role: 'Backend Developer • Node.js Engineer • AI Systems & API Architect',
+    category: 'Database & Infrastructure',
+    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=200&h=200',
+    email: 'adityapatildev21@gmail.com',
+    phone: '+91 8855040187',
+    location: 'Pune, Maharashtra, India',
+    skills: [
+      "Node.js / Express.js",
+      "REST API & System Design",
+      "Redis Caching & Latency Opt",
+      "JWT & OWASP Security",
+      "Nginx, Docker & AWS EC2"
+    ],
+    summary: "Backend Developer and API Architect with production experience building secure, scalable server-side systems and AI-powered backend services using Node.js, Express.js, MongoDB, MySQL, and Redis. Deep expertise in REST API design, JWT authentication, rate limiting, OWASP security hardening, and prompt engineering for LLM integration. Experienced deploying on AWS.",
+    experience: [
+      {
+        role: "Backend Systems Architect (NextGen AI Services)",
+        company: "nextgensupportai.vercel.app/home",
+        duration: "Feb 2025 – May 2025",
+        desc: "Architected scalable AI backend on AWS EC2 behind Nginx. Integrated OpenAI APIs with prompt rule injection reducing off-topic output by ~60%. Implemented Redis context caching, cutting API latency by ~45ms."
+      },
+      {
+        role: "Backend Real-Time Engineer (LangBridge)",
+        company: "googlemeetcloneapp.netlify.app",
+        duration: "Feb 2025 – Jul 2025",
+        desc: "Designed WebRTC signaling server with Socket.io supporting low-latency video sessions. Built room manager backend handling dynamic sessions and ICE exchange for 50+ concurrent rooms under load."
+      },
+      {
+        role: "Backend Systems Developer (Ram Mart)",
+        company: "rammart.netlify.app",
+        duration: "May 2025 – Jun 2025",
+        desc: "Built RESTful e-commerce API covering user auth, product catalog, cart logic, and admin CRUD. Implemented JWT with token rotation, CORS, Helmet.js, AWS S3 image upload, and Redis listing cache."
+      }
+    ],
+    resumeLink: "https://drive.google.com/file/d/1B6_b80j8uR70tLzX3h-yV069G917X69V/view?usp=sharing",
+    resumeDownload: "https://docs.google.com/uc?export=download&id=1B6_b80j8uR70tLzX3h-yV069G917X69V",
+    actualResponses: {
+      "explain aditya's backend api optimization strategies": "Aditya implements Redis caching on high-traffic listing endpoints (reducing response time from 320ms to 175ms), uses Nginx for upstream load management, and utilizes AWS CloudFront CDN for edge-cached static assets.",
+      "how does aditya design prompt engineering pipelines": "Aditya engineers structured prompt engineering pipelines with domain-specific rule injection and dynamic response filtering, reducing off-topic LLM outputs by ~60%.",
+      "what real-time signaling technologies does aditya deploy": "Aditya builds WebRTC peer-to-peer signaling servers in Node.js with Socket.io, configuring STUN/TURN relay fallbacks and managing room sessions entirely from the server."
+    },
+    suggestedPrompts: [
+      "Explain Aditya's backend API optimization strategies?",
+      "How does Aditya design prompt engineering pipelines?",
+      "What real-time signaling technologies does Aditya deploy?"
     ]
   }
 ];
@@ -146,7 +188,6 @@ export default function App() {
 
   const chatContainerRef = useRef(null);
   const activeDoc = CANDIDATE_JSON_DATA.find(d => d.id === selectedDocId);
-  const activeExperience = activeDoc?.experience ?? [];
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -162,7 +203,6 @@ export default function App() {
   };
 
   const handleDownloadFile = (type, doc) => {
-    const experience = doc.experience ?? [];
     let filename = `${doc.name.toLowerCase().replace(' ', '_')}_resume`;
     let content = "";
     let mimeType = "text/plain";
@@ -183,7 +223,7 @@ VERIFIED CORE SKILLS:
 ${doc.skills.join(', ')}
 
 PROFESSIONAL EXPERIENCE RECORD:
-${experience.map(exp => `
+${doc.experience.map(exp => `
 * ${exp.role} at ${exp.company} (${exp.duration})
   ${exp.desc}
 `).join('')}
@@ -200,9 +240,12 @@ Generated dynamically via PDF Candidate System.
       filename += ".doc";
       mimeType = "application/msword";
     } else if (type === 'pdf') {
-      filename += ".pdf";
-      mimeType = "application/pdf";
-      content = `%PDF-1.4\n%... Simulated PDF Content payload for ${doc.name} ...`;
+      window.open(doc.resumeLink, "_blank");
+      triggerToast(
+        "Redirecting to Resume", 
+        `Opening Aditya Patil's verified PDF resume in a new tab.`
+      );
+      return;
     }
 
     const blob = new Blob([content], { type: mimeType });
@@ -617,7 +660,7 @@ Generated dynamically via PDF Candidate System.
                       </div>
 
                       <div className="relative border-l border-slate-200 pl-5 ml-1.5 space-y-5">
-                        {activeExperience.map((exp, index) => (
+                        {activeDoc.experience.map((exp, index) => (
                           <div key={index} className="relative">
                             {/* Beautiful Visual Node representation */}
                             <div className="absolute -left-[24px] top-1 w-2.5 h-2.5 rounded-full bg-white border-2 border-[#6527D0] shadow-sm" />
@@ -634,11 +677,6 @@ Generated dynamically via PDF Candidate System.
                             <p className="text-[10px] text-slate-500 mt-2 leading-relaxed font-light">{exp.desc}</p>
                           </div>
                         ))}
-                        {activeExperience.length === 0 && (
-                          <p className="text-[10px] text-slate-500 font-light">
-                            Experience data is not available for this profile yet.
-                          </p>
-                        )}
                       </div>
                     </div>
                   )}

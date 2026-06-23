@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL =  (import.meta.env.VITE_API_URL || '/api').replace(/\/$/, '') ;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -60,14 +60,4 @@ export const skillsAPI = {
   },
 };
 
-export const healthAPI ={
-  healthCheck: async () =>{
-    try {
-      const response = await apiClient.get("/health")
-      return response.data
-    } catch (error) {
-      throw error;
-    }
-  }
-}
 export default apiClient;

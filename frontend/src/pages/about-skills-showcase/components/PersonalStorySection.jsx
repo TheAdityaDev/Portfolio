@@ -85,7 +85,7 @@ const PersonalStorySection = ({ parallaxY }) => {
               {/* Profile Image */}
               <div className="relative bg-white p-2 rounded-royal-lg royal-shadow-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDUKDF46x0uhYFdczp2P_0Hu3r1m2MB9I5zT8IKrRBg&s=10"
                   alt="Aditya Patil - Creative Director"
                   className="w-full h-96 object-cover rounded-royal"
                 />
