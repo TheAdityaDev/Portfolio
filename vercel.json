@@ -23,10 +23,10 @@
       "dest": "server/index.js"
     }
   ],
-  "rewrites": [
+    "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
   ]
 }
