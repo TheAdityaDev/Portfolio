@@ -21,7 +21,11 @@
     <meta name="author" content="Aditya Patil" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="canonical" href="https://adityaportfolio-lyart.vercel.app/" />
+    <link rel="canonical" href="https://adityasportfoilo.vercel.app/" />
+
+
+
+    <!-- https://adityasportfoilo.vercel.app/ -->
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.svg" />
@@ -35,11 +39,15 @@
     />
     <meta
       property="og:image"
-      content="https://adityaportfolio-lyart.vercel.app/assets/images/banner.png"
+      content="https://adityasportfoilo.vercel.app/assets/images/banner.png"
+    />
+     <meta
+      property="og:image"
+      content="https://aditysportfolio.netlify.app/assets/images/banner.png"
     />
     <meta
       property="og:url"
-      content="https://adityaportfolio-lyart.vercel.app/"
+      content="https://adityasportfoilo.vercel.app/"
     />
 
     <!-- Twitter -->
@@ -51,7 +59,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://adityaportfolio-lyart.vercel.app/assets/images/banner.png"
+      content="https://adityasportfoilo.vercel.app/assets/images/banner.png"
     />
 
     <!-- Google Analytics -->
@@ -117,5 +125,36 @@
         }
       })(window.location);
     </script>
+
+    <script>
+(function () {
+  const currentHost = window.location.hostname;
+
+  const domains = {
+    vercel: "https://adityasportfoilo.vercel.app",
+    netlify: "https://aditysportfolio.netlify.app"
+  };
+
+  function redirectToBackup() {
+    if (currentHost === domains.vercel) {
+      window.location.replace(
+        `https://${domains.netlify}${window.location.pathname}${window.location.search}`
+      );
+    } else if (currentHost === domains.netlify) {
+      window.location.replace(
+        `https://${domains.vercel}${window.location.pathname}${window.location.search}`
+      );
+    }
+  }
+
+  window.addEventListener("error", () => {
+    redirectToBackup();
+  });
+
+  window.addEventListener("unhandledrejection", () => {
+    redirectToBackup();
+  });
+})();
+</script>
   </body>
 </html>

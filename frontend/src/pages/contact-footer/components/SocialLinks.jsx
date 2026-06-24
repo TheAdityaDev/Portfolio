@@ -203,7 +203,7 @@ const SocialLinks = () => {
           {socialPlatforms.slice(0, 3).map((platform, index) => (
             <motion.a
               key={`floating-${platform.id}`}
-              href={platform.url}
+              href={platform.url.startsWith('http') ? platform.url : `https://${platform.url}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-10 h-10 bg-white royal-shadow hover:royal-shadow-md rounded-full flex items-center justify-center group royal-transition"

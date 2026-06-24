@@ -10,6 +10,8 @@ const { connectDB } = require("./config/db");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.use(express.static('dist'));
+
 const frontendDistPath = path.join(__dirname, "../frontend/dist");
 const configuredOrigins = (process.env.CORS_ORIGIN || "")
   .split(",")
