@@ -20,3 +20,7 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-corner{
   display: none;
 }
+
+body{
+  content-visibility: auto;
+}
